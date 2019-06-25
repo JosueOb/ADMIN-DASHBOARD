@@ -3,10 +3,23 @@
 
 @import 'variables';
 
-@import 'reboot';
-// Bloques
-@import 'blocks/main-sidebar';
+//Componentes
+@import 'components/reboot';
+@import 'components/buttons';
+@import 'components/button-group';
+@import 'components/navbar';
+@import "components/badge";
+@import "components/alert";
+@import "components/input-group";
+@import "components/custom-forms";
+@import "components/custom-sliders";
+@import "components/images";
+@import "components/icons";
+@import "components/dropdown";
+@import "components/card";
+@import "components/utilities";
 
-body{
-    background-color: red;
-}
+
+//block
+@import 'blocks/main-sidebar';
+@import 'blocks/main-sidebar'
