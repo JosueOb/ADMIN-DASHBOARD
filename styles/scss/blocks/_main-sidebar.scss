@@ -1,0 +1,52 @@
+// Estilos para el sidebar
+.main-sidebar{
+    // border:red solid 1px;
+    top:0;
+    position: fixed;
+    height: $main-sidebar-height;
+    background-color:$main-sidebar-background;
+    z-index: $main-sidebar-zindex;
+    // will-change: $main-sidebar-will-change;
+    transition: $main-sidebar-transition;
+    box-shadow: $side-shadow;
+
+    @media(max-width:767.98){
+        transform: translateX(-100%);
+        box-shadow: none;
+    }
+
+    // Estado abierto
+    &.open{
+        // border: solid red 1px;
+        transform: translateX(0);
+        box-shadow: $side-shadow;
+    }
+    
+    //Toggle sidebar
+    .toggle-sidebar{
+        // border: solid red 1px;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        padding: $main-sidebar-toggle-padding;
+        font-size: $main-sidebar-toggle-font-size;
+        border-left: $main-sidebar-toggle-border-left;
+        
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    // Sideber navbar brand
+    .navbar-brand{
+        border: solid red 1px;
+        overflow: hidden;
+        height: $main-navbar-height;
+        font-size: $main-navbar-brand-font-size;
+
+        @media(max-width: 991.98px){
+            font-size: 90%;
+        }
+
+    }
+}
