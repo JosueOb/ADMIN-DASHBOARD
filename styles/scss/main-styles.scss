@@ -1,0 +1,12 @@
+// Anulaciones de variables
+@import 'overrides';
+
+@import 'variables';
+
+@import 'reboot';
+// Bloques
+@import 'blocks/main-sidebar';
+
+body{
+    background-color: red;
+}
