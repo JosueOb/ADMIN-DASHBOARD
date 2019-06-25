@@ -1,0 +1,57 @@
+//Colores
+$fiord-blue:   #3D5170 !default;
+$border-color: #e1e5eb;
+
+// New grays
+$reagent-gray: #818EA3 !default;
+
+// Body
+$body-background: #F5F6F8;
+
+// Text color adjustments
+$text-light-color: $reagent-gray !default;
+
+//Border
+$border-radius:0.375rem;
+
+// Navbar
+$navbar-brand-color: $fiord-blue !default;
+$navbar-brand-font-weight: 500 !default;
+
+
+// Variables para Main Navbar
+$main-navbar-height: 3.75rem !default;
+$main-navbar-box-shadow: 0 0.125rem 0.625rem rgba(90,97,105,.12) !default;
+$main-navbar-nav-link-min-width: 3.75rem !default;
+$main-navbar-actions-link-border: 1px solid #e3e6ec !default;
+$main-navbar-nav-link-icon-line-height: 2.5rem !default;
+$main-navbar-brand-font-size: 1rem !default;
+
+// Main Navbar -> Notifications
+$notifications-badge-padding-x: 0.375rem !default;
+$notifications-badge-padding-y: 0.25rem !default;
+$notifications-badge-font-size: 0.5rem !default;
+
+$notifications-dropdown-min-width: 25rem !default;
+$notifications-dropdown-item-padding-top: 0.625rem !default;
+$notifications-dropdown-item-padding-bottom: 0.625rem !default;
+$notifications-dropdown-item-border-bottom: 1px solid $border-color !default;
+
+$notifications-icon-background-color: $body-background !default;
+$notifications-icon-width: 2.1875rem !default;
+$notifications-icon-height: 2.1875rem !default;
+$notifications-icon-color: $text-light-color !default;
+$notifications-icon-line-height: 2.0625rem !default;
+$notifications-icon-font-size: 1.0625rem !default;
+$notifications-icon-box-shadow: 0 0 0 1px white,
+                                inset 0 0 3px rgba(0, 0, 0, 0.2);
+
+$notification-content-padding: 0 0.625rem !default;
+$notification-content-paragraph-font-size: 0.75rem !default;
+
+$notification-category-font-size: 0.5625rem !default;
+$notification-category-color: $reagent-gray !default;
+$notification-category-letter-spacing: 0.0938rem !default;
+
+// Main Navbar -> User Avatar
+$user-avatar-max-width: 2.5rem !default;
