@@ -16,6 +16,7 @@
     .notifications{
         // border: red 1px solid;
         position: relative;
+        
         @media (max-width: 767.98px){
             // border: red 1px solid;
             position: static;
@@ -24,6 +25,7 @@
                 border-left:none;
             }
         }
+
         .badge{
             // border: solid red 1px;
             position: absolute;
@@ -38,10 +40,12 @@
             min-width:  $notifications-dropdown-min-width;
             border-right: 0;
             left: auto;
+
             @media(max-width: 767.98px){
                 left: 0;
                 right: 0;
             }
+
             .dropdown-item{
                 white-space: normal;
                 display: flex;
@@ -54,6 +58,7 @@
                     border-bottom: 0;
                 }
             }
+
             .notification{
                 // border:solid 1px red;
                 &__icon-wrapper{
@@ -61,6 +66,7 @@
                     display: flex;
                     padding: 0 5px;
                 }
+
                 &__icon{
                     // border: solid red 1px;
                     background-color:  $notifications-icon-background-color;
@@ -72,6 +78,7 @@
                     text-align: center;
                     margin: auto;
                     border-radius: 50%;
+
                     i{
                         color: $notifications-icon-color;
                         line-height: $notifications-icon-line-height;
@@ -82,12 +89,14 @@
                 &__content{
                     // border: solid red 1px;
                     padding: $notification-content-padding;
+                    
                     p{
                         margin: 0;
                         line-height: 1.5;
                         font-size: $notification-content-paragraph-font-size;
                     }
                 }
+
                 &__category{
                     // border: solid red 1px;
                     font-size: $notification-category-font-size;
@@ -111,7 +120,6 @@
                     
                 }
             }
-
         }
     }
     //User avatar
@@ -134,9 +142,9 @@
         line-height: $main-navbar-nav-link-icon-line-height;
     }
 
-    // Main navbar shadow
-    // .main-content > .main-navbar,
-    // .main-content .header-navbar{
-    //     box-shadow: $main-navbar-box-shadow;
-    // }
+    Main navbar shadow
+    .main-content > .main-navbar,
+    .main-content .header-navbar{
+        box-shadow: $main-navbar-box-shadow;
+    }
 }
