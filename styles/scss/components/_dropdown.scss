@@ -1,18 +1,16 @@
-// Ajusten en el Dropdown
+// Dropdown adjustments
 
-// Ajuste en los iconos del dropdown
-.dropdown{
-    // border:solid red 1px;
-    .fa,
-    .material-icons{
-        // border: solid red 1px;
-        color: $blueish-grey;
-    }
+// Adjust dropdown icons
+.dropdown {
+  .fa,
+  .material-icons {
+    color: lighten($blueish-grey, 40);
+    margin-right: 0.25rem;
+  }
 
-    .dropdown-item{
-        // border:solid red 1px;
-        &:hover{
-            background-color: lightblue($blueish-grey,20);
-        }
+  .dropdown-item {
+    &:hover {
+      background-color: lighten($blueish-grey, 60);
     }
+  }
 }

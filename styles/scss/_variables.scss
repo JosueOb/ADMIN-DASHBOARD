@@ -40,6 +40,14 @@ $border-radius:0.375rem;
 $navbar-brand-color: $fiord-blue !default;
 $navbar-brand-font-weight: 500 !default;
 
+// Nav
+$nav-link-color: $reagent-gray !default;
+$nav-link-icon-color: $nav-link-color !default;
+$nav-link-icon-font-size: 1.25rem !default;
+$nav-link-material-icons-font-size: 1.5625rem !default;
+$nav-link-font-size: 0.8125rem !default;
+$nav-link-font-weight: 400 !default;
+
 // Transition
 $transition-duration:200ms;
 
@@ -141,3 +149,6 @@ $main-sidebar-nav-no-borders-dropdown-item-first-border-top: $main-sidebar-dropd
 $main-sidebar-dropdown-item-font-size: 0.8125rem !default;
 $main-sidebar-dropdown-item-font-weight: 400 !default;
 $main-sidebar-dropdown-item-font-weight-retina: 300 !default;
+
+//Main footer
+$main-footer-height: $main-navbar-height !default;
