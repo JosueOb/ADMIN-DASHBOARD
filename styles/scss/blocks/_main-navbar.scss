@@ -1,5 +1,6 @@
 // Estilos del Main Navbar
 .main-navbar .navbar{
+    background-color: $main-navbar-background-color;
     // border: solid red 1px;
     height: $main-navbar-height;
 
@@ -14,7 +15,8 @@
 
     // Notificaciones
     .notifications{
-        // border: red 1px solid;
+        
+        border-left: $main-navbar-nav-link-border-color-left;
         position: relative;
         
         @media (max-width: 767.98px){
@@ -22,24 +24,31 @@
             position: static;
 
             .dropdown-menu{
+                // border: solid red 1px;
                 min-width: 100% !important;
                 border-left:none;
             }
         }
 
         .badge{
-            // border: solid red 1px;
+            // border: solid red 1px !important;
+            // position: sticky;
             position: absolute;
             padding: $notifications-badge-padding-y $notifications-badge-padding-x;
             font-size: $notifications-badge-font-size;
-            left: 50%;
-            top: 50%
+            left: 53%;
+            top: 52%
         }
         .dropdown-menu{
-            // border: solid red 1px;
+            // top:$main-navbar-height;
+            // border-top: $main-navbar-nav-link-border-color-left;
+            background-color:$main-navbar-background-color;
+            border: solid red 1px;
             padding: 0;
+            margin: 0;
             min-width:  $notifications-dropdown-min-width;
-            border-right: 0;
+            // border-right: 0;
+            // border: none;
             left: auto;
 
             @media(max-width: 767.98px){
@@ -53,7 +62,7 @@
                 flex-flow: row;
                 padding-top: $notifications-dropdown-item-padding-top;
                 padding-bottom: $notifications-dropdown-item-padding-bottom;
-                border-bottom: $notifications-dropdown-item-border-bottom;
+                // border-bottom: $notifications-dropdown-item-border-bottom;
                 
                 &:last-child{
                     border-bottom: 0;
@@ -142,9 +151,9 @@
         line-height: $main-navbar-nav-link-icon-line-height;
     }
 
-    //Main navbar shadow
-    .main-content > .main-navbar,
-    .main-content .header-navbar{
-        box-shadow: $main-navbar-box-shadow;
-    }
+}
+//Main navbar shadow
+.main-content > .main-navbar,
+.main-content .header-navbar{
+    box-shadow: $main-navbar-box-shadow;
 }
