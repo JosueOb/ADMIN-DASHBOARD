@@ -16,12 +16,102 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles-test/css/main-styles.css">
 
-
     <title>Admin Dashboard</title>
-    
 </head>
 <body>
 
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Main Sidebar -->
+            <aside>
+
+            </aside>
+            <!-- /Main Sidebar -->
+
+            <!-- Main Navbar -->
+            <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+                <div class="main-navbar">
+                    <nav class="navbar justify-content-end p-0">
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item dropdown notifications m-0">
+                                <a class="nav-link nav-link-icon text-center" href="#" role="button" id="dropdownNotifications" data-toggle='dropdown' aria-haspopup="true" aria-expanded="false">
+                                    <div class="nav-link-icon__wrapper">
+                                        <!-- <i class="material-icons">&#xE7F4;</i> -->
+                                        <i class="fas fa-bell"></i>
+                                        <span class="badge badge-pill badge-danger">+2</span>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby='dropdownNotifications'>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="notification__icon-wrapper">
+                                            <div class="notification__icon">
+                                                <!-- <i class="material-icons">&#xE6E1;</i> -->
+                                                <i class="fas fa-info-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="notification__content">
+                                            <span class="notification__category">Problema</span>
+                                            <p>
+                                                <span class="text-success text-semibold">JosueOb</span>
+                                                Ha reportado un nuevo problema en el barrio.
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="notification__icon-wrapper">
+                                            <div class="notification__icon">
+                                                <!-- <i class="material-icons">&#xE6E1;</i> -->
+                                                <i class="fas fa-exclamation-triangle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="notification__content">
+                                            <span class="notification__category">Emergencia</span>
+                                            <p>
+                                                <span class="text-success text-semibold">JosueOb</span>
+                                                Ha reportado una nueva emergencia.
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <div class="notification__icon-wrapper">
+                                            <div class="notification__icon">
+                                                <!-- <i class="material-icons">&#xE6E1;</i> -->
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                        </div>
+                                        <div class="notification__content">
+                                            <span class="notification__category">Solicitud</span>
+                                            <p>
+                                                <span class="text-success text-semibold">JosueOb</span>
+                                                Ha solicitó unirse al sistema.
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item notification__all text-center">
+                                        Ver todas las notificaciones
+                                    </a>
+                                </div>
+                            </li>
+                            <li>Hola</li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </main>
+            <!-- /Main Navbar -->
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="scripts/dropdown.js"></script>
 
 </body>
 </html>
