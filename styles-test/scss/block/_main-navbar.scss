@@ -4,14 +4,15 @@
     height: $main-navbar-height;
 
     // Selector hijo, se seleccionan a los elementos hijos directo del primer elemento
-    // > * {
-    //     border:solid red 1px;
-    //     display: flex;
-    // }
+    > * {
+        // border:solid red 1px;
+        display: flex;
+    }
 
     .nav-link{
         // border:solid red 1px;
-        padding: $main-navbar-nav-link-padding;
+        // padding: $main-navbar-nav-link-padding;
+        
         border-left: $main-navbar-nav-border-color;
         min-width: $main-navbar-nav-link-min-width;
     }
@@ -19,7 +20,7 @@
     // Notificaciones
     .notifications{
         // border:solid 1px red;
-        position: relative;
+        // position: relative;
 
         @media(max-width: 767.98px){
             position: static;
@@ -29,5 +30,168 @@
                 min-width: 100% !important;
             }
         }
+
+        .badge{
+            // border: solid black 1px;
+            position: static;
+            padding: $notifications-badge-padding-y $notifications-badge-padding-x;
+            font-size: $notifications-badge-font-size;
+            // left: 60%;
+            // top: 35%;
+        }
+        .dropdown-menu{
+            box-shadow: $notification-dropdown-menu-box-shadow;
+            background-color: $main-navbar-background-color;
+            min-width: $notifications-dropdown-min-width;
+            left: auto;
+            padding: 0;
+            margin: 0;
+
+            @media(max-width: 767.98px){
+                left: 0;
+                right: 0;
+            }
+
+            .dropdown-item{
+                // border: solid red 1px;
+                border-top: $main-navbar-nav-border-color;
+                white-space: normal;
+                display: flex;
+                flex-flow: row;
+                padding-top: $notifications-dropdown-item-padding-top;
+                padding-bottom: $notifications-dropdown-item-padding-bottom;
+                // border-bottom: $notifications-dropdown-item-border-bottom;
+                
+                &:hover{
+                    background-color: $blue-800;
+                    color:$orange-500;
+                }
+            }
+
+            .notification{
+
+                &__icon-wrapper{
+                    // border:solid 1px red;
+                    // border:solid 1px red;
+                    display: flex;
+                    padding: 0 5px;
+                }
+
+                &__icon{
+                    // border: solid red 1px;
+                    background-color:  $notifications-icon-background-color;
+                    box-shadow: $notifications-icon-box-shadow;
+                    width: $notifications-icon-width;
+                    height: $notifications-icon-height;
+                    line-height: 0;
+                    display: block;
+                    text-align: center;
+                    margin: auto;
+                    border-radius: 50%;
+
+                    i{
+                        color: $notifications-icon-color;
+                        line-height: $notifications-icon-line-height;
+                        font-size: $notifications-icon-font-size;
+                        margin: 0;
+                    }
+
+                }
+
+                &__content{
+                    // border: solid red 1px;
+                    padding: $notification-content-padding;
+                    
+                    p{
+                        margin: 0;
+                        line-height: 1.5;
+                        font-size: $notification-content-paragraph-font-size;
+                    }
+                }
+
+                &__category{
+                    // border: solid red 1px;
+                    font-size: $notification-category-font-size;
+                    color: $notification-category-color;
+                    letter-spacing: $notification-category-letter-spacing;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                }
+
+                //Se aplica al link de visualizar todas las notificaciones
+                &__all{
+                    // border: solid red 1px;
+                    display: block;
+                    font-weight: 500;
+                    font-size: 11px;
+                    &:hover{
+                        border-bottom-left-radius: $border-radius;
+                        border-bottom-right-radius: $border-radius;
+                    }
+                    
+                } 
+            }
+        }
     }
+
+    // user avatar
+    .user-avatar{
+        max-width: $user-avatar-max-width;
+    }
+    
+    //Navbar
+    .navbar-nav .dropdown-menu{
+        // border:solid red 1px;
+        position: absolute;
+        right: 0;
+        // width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        // border-top: none;
+    }
+
+    .nav-link-icon i{
+        line-height: $main-navbar-nav-link-icon-line-height;
+    }
+
+    .dropdown-menu {
+        // border: solid red 1px;
+        z-index: 1000;
+        min-width: 10rem;
+        padding: 0;
+        margin: 0 0 0;
+        font-size: 1rem;
+        color: $blue-800;
+        box-shadow: $notification-dropdown-menu-box-shadow;
+        background-color:$main-navbar-background-color;
+        // border-radius: 0.375rem;
+    }
+
+    .dropdown-item {
+        margin: 0;
+        border-top: $main-navbar-nav-border-color;
+        padding: 0.375rem 0.875rem;
+        font-size: 0.813rem;
+        &:hover{
+            background-color: $blue-800;
+            color:$orange-500;
+        }
+        &:last-child{
+            // border:solid red 1px;
+            border-bottom-left-radius: 0.375rem;
+            border-bottom-right-radius: 0.375rem;
+        }
+    }
+    // .dropdown-divider {
+    //     margin: 0.25rem 0;
+    // }
+
+}
+
+//Main navbar shadow
+.main-content > .main-navbar,
+.main-content .header-navbar{
+    box-shadow: $main-navbar-box-shadow;
 }
