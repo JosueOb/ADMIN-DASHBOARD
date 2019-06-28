@@ -1,0 +1,33 @@
+.main-navbar .navbar{
+    // border:solid red 1px;
+    background-color:  $main-navbar-background-color;
+    height: $main-navbar-height;
+
+    // Selector hijo, se seleccionan a los elementos hijos directo del primer elemento
+    // > * {
+    //     border:solid red 1px;
+    //     display: flex;
+    // }
+
+    .nav-link{
+        // border:solid red 1px;
+        padding: $main-navbar-nav-link-padding;
+        border-left: $main-navbar-nav-border-color;
+        min-width: $main-navbar-nav-link-min-width;
+    }
+
+    // Notificaciones
+    .notifications{
+        // border:solid 1px red;
+        position: relative;
+
+        @media(max-width: 767.98px){
+            position: static;
+
+            .dropdown-menu {
+                // border: solid red 1px;
+                min-width: 100% !important;
+            }
+        }
+    }
+}

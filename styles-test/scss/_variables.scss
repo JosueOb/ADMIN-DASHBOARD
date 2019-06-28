@@ -1,1 +1,16 @@
+// Variables implementadas para el proyecto
 
+// Colores
+// Primarios
+$blue-700: #344955;
+$blue-800: #232f34;
+$blue-600: #4a6572;
+// Secundarios
+$orange-500: #f9aa33;
+
+// Main Navbar
+$main-navbar-background-color: $orange-500 !default;
+$main-navbar-height: 3.75rem !default;
+$main-navbar-nav-link-min-width: 3.75rem !default;
+$main-navbar-nav-link-padding: 1.07rem !default;
+$main-navbar-nav-border-color:  darken($orange-500,10%) solid .05px;

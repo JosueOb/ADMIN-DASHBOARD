@@ -15,18 +15,18 @@
 
     // Notificaciones
     .notifications{
-        border-left: $main-navbar-nav-border-color;
+        // border-left: $main-navbar-nav-border-color;
         position: relative;
         
         @media (max-width: 767.98px){
             // border: red 1px solid;
             position: static;
 
-            .dropdown-menu{
-                // border: solid red 1px;
-                min-width: 100% !important;
-                // border-left:none;
-            }
+            // .dropdown-menu{
+            //     // border: solid red 1px;
+            //     // min-width: 100% !important;
+            //     // border-left:none;
+            // }
         }
 
         .badge{

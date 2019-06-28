@@ -8,7 +8,10 @@
     <meta name="description" content="Admin Dashboard">
 
     <!-- Iconos -->
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+    
+    
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Bootstrap -->
@@ -29,9 +32,10 @@
             </aside>
             <!-- /Main Sidebar -->
 
-            <!-- Main Navbar -->
             <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
-                <div class="main-navbar">
+                <div class="main-navbar sticky-top">
+
+                    <!-- Main Navbar -->
                     <nav class="navbar justify-content-end p-0">
                         <ul class="navbar-nav flex-row">
                             <li class="nav-item dropdown notifications m-0">
@@ -93,13 +97,33 @@
                                     </a>
                                 </div>
                             </li>
-                            <li>Hola</li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle px-3 text-nowrap" data-toggle="dropdown" id="dropdownMenuUser" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/0.jpg" alt="user avatar" class="user-avatar rounded-circle mr-2">
+                                    <span class="d-none d-md-inline-block">Ana Cando</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuUser">
+                                    <a href="#" class="dropdown-item">
+                                        <i class="fas fa-user-circle"></i>
+                                        Perfil
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                        Mensajes
+                                    </a>
+                                    <a href="#" class="dropdown-item text-danger">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        Cerrar sesión
+                                    </a>
+                                </div>
+                            </li>
                         </ul>
 
                     </nav>
+                    <!-- /Main Navbar -->
+                    
                 </div>
             </main>
-            <!-- /Main Navbar -->
 
 
         </div>

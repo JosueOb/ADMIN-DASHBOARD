@@ -1,0 +1,14 @@
+.main-navbar .navbar {
+  background-color: #f9aa33;
+  height: 3.75rem; }
+  .main-navbar .navbar .nav-link {
+    padding: 1.07rem;
+    border-left: #f29407 solid 0.05px;
+    min-width: 3.75rem; }
+  .main-navbar .navbar .notifications {
+    position: relative; }
+    @media (max-width: 767.98px) {
+      .main-navbar .navbar .notifications {
+        position: static; }
+        .main-navbar .navbar .notifications .dropdown-menu {
+          min-width: 100% !important; } }
