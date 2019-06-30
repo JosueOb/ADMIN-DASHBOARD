@@ -32,15 +32,15 @@ $notifications-badge-padding-y: 0.25rem !default;
 $notifications-badge-font-size: 0.55rem !default;
 
 $notification-dropdown-menu-box-shadow:0 0.5rem 4rem rgba($orange-500, 0.11), 0 10px 20px rgba($orange-500, 0.05), 0 2px 3px rgba($orange-500, 0.06);
-$notifications-dropdown-min-width: 25rem !default;
+$notifications-dropdown-min-width: 23rem !default;
 $notifications-dropdown-item-padding-top: 0.625rem !default;
 $notifications-dropdown-item-padding-bottom: 0.625rem !default;
 
-$notifications-icon-background-color: $white !default;
+$notifications-icon-background-color: $blue-800 !default;
 $notifications-icon-box-shadow: 0 0 0 1px $orange-500,inset 0 0 3px $blue-800;
 $notifications-icon-width: 2.1875rem !default;
 $notifications-icon-height: 2.1875rem !default;
-$notifications-icon-color: $blue-800 !default;
+$notifications-icon-color: $orange-500 !default;
 $notifications-icon-line-height: 2.0625rem !default;
 $notifications-icon-font-size: 1.0625rem !default;
 

@@ -20,27 +20,22 @@
     background-color: #f9aa33;
     padding: 0;
     margin: 0;
-    min-width: 25rem;
+    min-width: 23rem;
     left: auto; }
     @media (max-width: 767.98px) {
       .main-navbar .navbar .notifications .dropdown-menu {
         left: 0;
         right: 0; } }
     .main-navbar .navbar .notifications .dropdown-menu .dropdown-item {
-      border-top: #f29407 solid 0.05px;
-      white-space: normal;
       display: flex;
       flex-flow: row;
       padding-top: 0.625rem;
       padding-bottom: 0.625rem; }
-      .main-navbar .navbar .notifications .dropdown-menu .dropdown-item:hover {
-        background-color: #232f34;
-        color: #f9aa33; }
     .main-navbar .navbar .notifications .dropdown-menu .notification__icon-wrapper {
       display: flex;
       padding: 0 5px; }
     .main-navbar .navbar .notifications .dropdown-menu .notification__icon {
-      background-color: white;
+      background-color: #232f34;
       box-shadow: 0 0 0 1px #f9aa33, inset 0 0 3px #232f34;
       width: 2.1875rem;
       height: 2.1875rem;
@@ -50,7 +45,7 @@
       margin: auto;
       border-radius: 50%; }
       .main-navbar .navbar .notifications .dropdown-menu .notification__icon i {
-        color: #232f34;
+        color: #f9aa33;
         line-height: 2.0625rem;
         font-size: 1.0625rem;
         margin: 0; }
@@ -84,21 +79,28 @@
     border-top-right-radius: 0;
     border-top: none; }
   .main-navbar .navbar .nav-link-icon i {
-    line-height: 2.5rem; }
+    line-height: 2.5rem;
+    color: #232f34; }
   .main-navbar .navbar .dropdown-menu {
-    z-index: 1000;
     min-width: 10rem;
     padding: 0;
     margin: 0 0 0;
-    font-size: 1rem;
+    font-size: 2rem;
     color: #232f34;
     box-shadow: 0 0.5rem 4rem rgba(249, 170, 51, 0.11), 0 10px 20px rgba(249, 170, 51, 0.05), 0 2px 3px rgba(249, 170, 51, 0.06);
-    background-color: #f9aa33; }
+    background-color: #f9aa33;
+    border-radius: 0.375rem; }
   .main-navbar .navbar .dropdown-item {
     margin: 0;
     border-top: #f29407 solid 0.05px;
-    padding: 0.375rem 0.875rem;
-    font-size: 0.813rem; }
+    font-size: 0.813rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem; }
+    .main-navbar .navbar .dropdown-item > i {
+      border: red solid 1px;
+      font-size: 1.0625rem; }
+    .main-navbar .navbar .dropdown-item > p {
+      display: inline; }
     .main-navbar .navbar .dropdown-item:hover {
       background-color: #232f34;
       color: #f9aa33; }
