@@ -1,11 +1,4 @@
-//Colores
-$fiord-blue:   #3D5170 !default;
-$border-color: #e1e5eb;
-$white: rgb(255,255,255);
-$mischka:      #CACEDB !default;
-$shuttle-gray: #5A6169 !default;
-$blueish-grey : #c3c7cc;
-
+// Variables implementadas para el proyecto
 
 // Colores
 // Primarios
@@ -14,24 +7,17 @@ $blue-800: #232f34;
 $blue-600: #4a6572;
 // Secundarios
 $orange-500: #f9aa33;
-
-
-
-// Accent color
-// Override this color and recompile the package to quickly change
-// the general accent color theme.
-$accent-color: theme-color('primary') !default;
-
-// New grays
-$reagent-gray: #818EA3 !default;
+$white: rgb(255,255,255);
 
 // Fonts
 $font-family-system-first: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-roboto-mono-first: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-roboto-first: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
 
-// Icons
-$icon-color: $mischka !default;
+
+//Border
+$border-radius:0.24.5rem;
+$border-color: $orange-500;
 
 // Shadows
 // 0 0.125rem 0.825rem rgba($orange-500,.5) !default
@@ -41,57 +27,36 @@ $side-shadow: 0 0.125rem 0.375rem rgba($orange-500, 0.1),
               0 0.4375rem 2.1875rem rgba($orange-500, .1);
 
 
-//Border
-$border-radius:0.24.5rem;
 
-// // Navbar
-// $navbar-brand-color: $fiord-blue !default;
-// $navbar-brand-font-weight: 500 !default;
-
-// // Nav
-// $nav-link-color: $reagent-gray !default;
-// $nav-link-icon-color: $nav-link-color !default;
-// $nav-link-icon-font-size: 1.25rem !default;
-// $nav-link-material-icons-font-size: 1.5625rem !default;
-// $nav-link-font-size: 0.8125rem !default;
-// $nav-link-font-weight: 400 !default;
-
-// // Transition
-// $transition-duration:200ms;
-
-// Variables para Main Navbar
-$main-navbar-nav-border-color:  darken($orange-500,10%) solid .05px;
+// Main Navbar
 $main-navbar-background-color: $orange-500 !default;
 $main-navbar-height: 3.75rem !default;
-$main-navbar-box-shadow: 0 0.125rem 0.825rem rgba($orange-500,.5) !default;
 $main-navbar-nav-link-min-width: 3.75rem !default;
+$main-navbar-nav-link-padding: 1.07rem !default;
+$main-navbar-nav-border-color:  darken($orange-500,10%) solid .05px;
+$main-navbar-box-shadow: 0 0.125rem 0.825rem rgba($orange-500,.5) !default;
 
-// Main Navbar -> Notifications
+$main-navbar-brand-font-size: 1.1rem !default;
+$main-navbar-nav-link-icon-line-height: 2.5rem !default;
+
+
+
+
+//  Main Navbar -> Notifications
 $notifications-badge-padding-x: 0.375rem !default;
 $notifications-badge-padding-y: 0.25rem !default;
-$notifications-badge-font-size: 0.5rem !default;
-$notification-dropdown-menu-box-shadow:0 0.5rem 4rem rgba($orange-500, 0.11), 0 10px 20px rgba($orange-500, 0.05), 0 2px 3px rgba($orange-500, 0.06);
+$notifications-badge-font-size: 0.55rem !default;
 
-$notifications-dropdown-min-width: 25rem !default;
+$notification-dropdown-menu-box-shadow:0 0.5rem 4rem rgba($orange-500, 0.11), 0 10px 20px rgba($orange-500, 0.05), 0 2px 3px rgba($orange-500, 0.06);
+$notifications-dropdown-min-width: 23rem !default;
 $notifications-dropdown-item-padding-top: 0.625rem !default;
 $notifications-dropdown-item-padding-bottom: 0.625rem !default;
-// $notifications-dropdown-item-border-bottom: 1px solid $border-color !default;
 
-
-$main-navbar-actions-link-border: 1px solid #e3e6ec !default;
-$main-navbar-nav-link-icon-line-height: 2.5rem !default;
-$main-navbar-brand-font-size: 0.9rem !default;
-
-
-
-$notifications-icon-background-color: $white !default;
-$notifications-icon-box-shadow: 0 0 0 1px $orange-500,
-                                inset 0 0 3px $blue-800;
+$notifications-icon-background-color: $blue-800 !default;
+$notifications-icon-box-shadow: 0 0 0 1px $orange-500,inset 0 0 3px $blue-800;
 $notifications-icon-width: 2.1875rem !default;
 $notifications-icon-height: 2.1875rem !default;
-
-
-$notifications-icon-color: $blue-800 !default;
+$notifications-icon-color: $orange-500 !default;
 $notifications-icon-line-height: 2.0625rem !default;
 $notifications-icon-font-size: 1.0625rem !default;
 
@@ -99,25 +64,15 @@ $notification-content-padding: 0 0.625rem !default;
 $notification-content-paragraph-font-size: 0.75rem !default;
 
 $notification-category-font-size: 0.5625rem !default;
-$notification-category-color: $reagent-gray !default;
+$notification-category-color: $white !default;
 $notification-category-letter-spacing: 0.0938rem !default;
 
-// Main Navbar -> User Avatar
+
+
 $user-avatar-max-width: 2.5rem !default;
 
 
-
-
-
-
-
 // Main sidebar
-// $dropdown-icon-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTcuNDEgNy44NEwxMiAxMi40Mmw0LjU5LTQuNThMMTggOS4yNWwtNiA2LTYtNnoiLz4gICAgPHBhdGggZD0iTTAtLjc1aDI0djI0SDB6IiBmaWxsPSJub25lIi8+PC9zdmc+);
-// $dropdown-icon-width: 0.875rem;
-// $dropdown-icon-height: 0.5625rem;
-// $dropdown-icon-background-position: center center;
-// $dropdown-icon-transition: transform $transition-duration ease-in-out;
-
 $main-sidebar-height: calc(100vh) !default;
 $main-sidebar-zindex: 1070 !default;
 $main-sidebar-background: $blue-600 !default;
@@ -129,8 +84,6 @@ $main-sidebar-toggle-padding: 1.25rem !default;
 $main-sidebar-toggle-border-left: 1px solid $border-color !default;
 
 $main-sidebar-nav-wrapper-height: calc(100vh - 3.75rem - 1px) !default;
-// $main-sidebar-nav-border-bottom: 1px solid $border-color !default;
-
 
 $main-sidebar-nav-link-font-family: $font-family-system-first !default;
 $main-sidebar-nav-link-will-change: background-color, box-shadow, color !default;
@@ -138,7 +91,6 @@ $main-sidebar-nav-link-transition: box-shadow 200ms ease,color 200ms ease,backgr
 $main-sidebar-nav-link-font-size: 0.85rem !default;
 $main-sidebar-nav-link-border: 1px solid $blue-700 !default;
 $main-sidebar-nav-link-font-weight: 400 !default;
-
 $main-sidebar-nav-link-color: $white !default;
 $main-sidebar-nav-link-padding-x: 1.5625rem !default;
 $main-sidebar-nav-link-padding-y: 0.9375rem !default;
@@ -154,24 +106,22 @@ $main-sidebar-nav-link-active-color: $orange-500 !default;
 $main-sidebar-nav-link-active-icon-color: $orange-500 !default;
 
 
-// $main-sidebar-dropdown-menu-box-shadow: inset 0 -0.1875rem 0.1875rem $blue-800 !default;
+//Main content --> Page Header
 
-// $main-sidebar-dropdown-item-background-color-active: $main-sidebar-nav-link-active-background-color !default;
-// $main-sidebar-dropdown-item-background-hover: none !default;
-// $main-sidebar-dropdown-item-padding-x: 1.75rem !default;
-// $main-sidebar-dropdown-item-padding-y: 0.75rem !default;
-// $main-sidebar-dropdown-item-border: 1px solid lighten($border-color, 5) !default;
-// $main-sidebar-dropdown-item-last-border: 1px solid $border-color !default;
-// $main-sidebar-dropdown-item-color: $fiord-blue !default;
-// $main-sidebar-dropdown-item-active-color: $accent-color !default;
+$page-title-font-size: 1.625rem !default;
+$page-title-sm-font-size: 2rem !default;
+$page-title-font-weight: 500 !default;
+$page-title-line-height: 1 !default;
+$page-title-margin: 0 !default;
+$page-title-padding: 0 !default;
 
-// $main-sidebar-nav-no-borders-nav-link-border-bottom: 0 !default;
-// $main-sidebar-nav-no-borders-dropdown-menu-box-shadow: inset 0 0 0.4375rem rgba($fiord-blue, .2) !default;
-// $main-sidebar-nav-no-borders-dropdown-item-first-border-top: $main-sidebar-dropdown-item-last-border !default;
+$page-subtitle-letter-spacing: 0.125rem !default;
+$page-subtitle-color: $orange-500 !default;
+$page-subtitle-font-size: 0.625rem !default;
+$page-subtitle-font-size-sm: 0.8125rem !default;
+$page-subtitle-font-weight-sm: 400 !default;
 
-// $main-sidebar-dropdown-item-font-size: 0.8125rem !default;
-// $main-sidebar-dropdown-item-font-weight: 400 !default;
-// $main-sidebar-dropdown-item-font-weight-retina: 300 !default;
+
 
 //Main footer
 $main-footer-height: $main-navbar-height !default;
