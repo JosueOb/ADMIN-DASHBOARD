@@ -56,7 +56,7 @@
             .dropdown-item{
                 // border: solid red 1px;
                 // border-top: $main-navbar-nav-border-color;
-                // white-space: normal;
+                white-space: normal;
                 display: flex;
                 flex-flow: row;
                 padding-top: $notifications-dropdown-item-padding-top;
@@ -162,7 +162,7 @@
     .dropdown-menu {
         // border: solid red 1px;
         // z-index: 1000;
-        min-width: 10rem;
+        min-width: 9.5rem;
         padding: 0;
         margin: 0 0 0;
         font-size: 2rem;
@@ -174,6 +174,7 @@
 
     .dropdown-item {
         margin: 0;
+        white-space: normal;
         border-top: $main-navbar-nav-border-color;
         font-size: 0.813rem;
         padding-top: $notifications-dropdown-item-padding-top;
