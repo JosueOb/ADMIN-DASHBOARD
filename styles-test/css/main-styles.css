@@ -37,7 +37,7 @@
       padding: 0 5px; }
     .main-navbar .navbar .notifications .dropdown-menu .notification__icon {
       background-color: #232f34;
-      box-shadow: 0 0 0 1px #f9aa33, inset 0 0 3px #232f34;
+      box-shadow: 0 0 0 1px white, inset 0 0 3px rgba(0, 0, 0, 0.2);
       width: 2.1875rem;
       height: 2.1875rem;
       line-height: 0;
@@ -122,29 +122,34 @@
   z-index: 1070;
   will-change: transform;
   transition: transform 200ms ease-in-out;
-  box-shadow: 0 0.125rem 0.375rem rgba(249, 170, 51, 0.1), 0 0.125rem 0.5rem rgba(249, 170, 51, 0.15), 0 0.9375rem 1.375rem rgba(249, 170, 51, 0.1), 0 0.4375rem 2.1875rem rgba(249, 170, 51, 0.1); }
+  box-shadow: 0 0.125rem 9.375rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.5rem rgba(90, 97, 105, 0.12), 0 0.9375rem 1.375rem rgba(90, 97, 105, 0.1), 0 0.4375rem 2.1875rem rgba(165, 182, 201, 0.1); }
   @media (max-width: 767.98px) {
     .main-sidebar {
       transform: translateX(-100%);
       box-shadow: none; } }
   .main-sidebar.open {
     transform: translateX(0);
-    box-shadow: 0 0.125rem 0.375rem rgba(249, 170, 51, 0.1), 0 0.125rem 0.5rem rgba(249, 170, 51, 0.15), 0 0.9375rem 1.375rem rgba(249, 170, 51, 0.1), 0 0.4375rem 2.1875rem rgba(249, 170, 51, 0.1); }
+    box-shadow: 0 0.125rem 9.375rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.5rem rgba(90, 97, 105, 0.12), 0 0.9375rem 1.375rem rgba(90, 97, 105, 0.1), 0 0.4375rem 2.1875rem rgba(165, 182, 201, 0.1); }
   .main-sidebar .toggle-sidebar {
     position: absolute;
     right: 0;
     height: 100%;
     padding: 1.25rem;
     font-size: 1.25rem;
-    border-left: 1px solid #e1e5eb; }
+    border-left: 1px solid #f9aa33; }
     .main-sidebar .toggle-sidebar:hover {
       cursor: pointer; }
   .main-sidebar .navbar-brand {
     overflow: hidden;
     height: 3.75rem;
     font-size: 0.9rem;
-    background-color: #4a6572;
-    color: #f9aa33; }
+    background-color: white;
+    color: #232f34; }
+    .main-sidebar .navbar-brand .brand-logo {
+      border: solid red 1px;
+      max-width: 30px; }
+    .main-sidebar .navbar-brand .brand-name {
+      border: solid red 1px; }
   .main-sidebar .nav-wrapper {
     overflow-y: auto;
     overflow-x: hidden;
@@ -174,7 +179,7 @@
       color: white;
       transition: color 200ms ease;
       margin-right: 0.375rem; }
-    .main-sidebar .nav .nav-item .nav-link i.material-icons {
+    .main-sidebar .nav .nav-item .nav-link i {
       font-size: 1.125rem;
       top: -1px; }
   .main-sidebar .nav .nav-item.active,
