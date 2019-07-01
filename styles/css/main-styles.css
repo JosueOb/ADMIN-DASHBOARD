@@ -1,3 +1,17 @@
+.card-header h1, .card-header h2, .card-header h3, .card-header h4, .card-header h5, .card-header h6 {
+  font-weight: 500; }
+
+.card {
+  border: solid red 1px;
+  box-shadow: 0 2px 0 #f9aa33, 0 4px 8px #f9aa33, 0 10px 10px #f9aa33, 0 7px 70px #f9aa33;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 0.75rem; }
+  .card a {
+    color: #f9aa33; }
+    .card a:hover {
+      color: #232f34; }
+
 .main-navbar .navbar {
   background-color: #f9aa33;
   height: 3.75rem; }
