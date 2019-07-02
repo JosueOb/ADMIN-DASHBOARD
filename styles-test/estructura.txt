@@ -1,0 +1,73 @@
+Las estructura de carpetas de este proyecto son las siguientes:
+base/
+components/
+layout/
+pages/
+themes/
+abstracts/
+vendors/
+
+Carpeta base/
+Contiene la plantilla del proyecto, se puede encontrar lo que es un archivo reset para reiniciar
+los estilos CSS, algunas reglas tipograficas y un archivo CSS que define algunos estilos estándares 
+para los elementos HTML más comunes.
+_base.scss
+_reset.scss
+_typography.scss
+
+Carpeta layout/
+Contiene todo lo que tiene que ver con la distribución del sitio o aplicación. Esta carpeta Contiene
+los estilos para las partes principales del sitio como header, footer, navigation, sidebar, el sistema
+de retícula o incluso el estilo CSS para formularios
+_grid.scss
+_header.scss
+_footer.scss
+_sidebar.scss
+_forms.scss
+_navigation.scss
+
+Carpeta components/
+Si tienes estilos específicos para cada página, es mejor ponerlos en una carpeta pages/, dentro de un 
+archivo con el nombre de la página. Por ejemplo, es común tener muchos estilos específicos para la página 
+principal, por lo que existe la necesidad de tener un archivo _home.scss en la carpeta pages/.
+
+_home.scss
+_contact.scss
+
+Carpeta themes/
+En sitios y aplicaciones grandes, no es raro tener diferentes temas. Es cierto que hay diferentes maneras
+ de tratar con los temas, pero personalmente, me gusta tenerlos todos en la carpeta themes/.
+
+_theme.scss
+_admin.scss
+
+Carpeta abstracts/
+La carpeta abstracts/ reúne todas las herramientas y helpers de Sass utilizados en todo el proyecto. 
+Cada variable global, función, mixin y placeholder debería estar en esta carpeta.
+
+La regla de oro para esta carpeta es que no debe generar ni una sola línea de CSS cuando se compila por 
+si sola. Solo hay helpers de Sass.
+
+_variables.scss
+_mixins.scss
+_functions.scss
+_placeholders.scss
+La carpeta abstracts/ también se puede llamar utilities/ o helpers/, dependiendo de tus preferencias
+
+Carpeta vendors/
+Y por último, pero no menos importante, la mayoría de los proyectos tienen una carpeta vendors/ que 
+contiene todos los archivos CSS procedentes de librerías externas y frameworks – Normalize, Bootstrap, 
+jQueryUI, FancyCarouselSliderjQueryPowered, etc. Poner estos archivos en una misma carpeta, es una buena 
+forma de decir "¡Hey! esto no lo he escrito yo, no es mi código y no es mi responsabilidad".
+
+_normalize.scss
+_bootstrap.scss
+_jquery-ui.scss
+_select2.scss
+Si tienes que sobrescribir una sección de cualquier vendor, te recomiendo que tengas una octava carpeta 
+llamada vendors-extensions/ en la que puedes poner estos archivos usando el mismo nombre que le ha dado 
+el desarrollador.
+
+Por ejemplo, vendors-extensions/_bootstrap.scss es un archivo que contiene todas las reglas CSS que se 
+volverán a declarar con respecto al CSS por defecto de Bootstrap. Esto se hace para evitar editar 
+directamente los archivos del proveedor, lo que es en general una mala idea.

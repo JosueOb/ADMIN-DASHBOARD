@@ -1,0 +1,21 @@
+/**
+Estilos para el sistema web
+**/
+
+/*Variables*/
+@import 'abstracts/variables';
+
+/*Mixin*/
+@import 'abstracts/mixin';
+
+/*Sobreescritura de los estilos de bootstrap*/
+/*Override*/
+@import 'override/misc';
+@import 'override/form';
+@import 'override/card';
+@import 'override/button';
+@import 'override/grid';
+
+
+@import 'themes/misc';
+@import 'themes/section';
