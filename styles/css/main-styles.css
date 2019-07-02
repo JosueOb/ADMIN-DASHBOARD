@@ -160,7 +160,6 @@
     background-color: white;
     color: #232f34; }
     .main-sidebar .navbar-brand .brand-logo {
-      border: solid red 1px;
       max-width: 30px; }
   .main-sidebar .nav-wrapper {
     overflow-y: auto;
