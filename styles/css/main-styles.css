@@ -2,11 +2,10 @@
   font-weight: 500; }
 
 .card {
-  border: solid red 1px;
   box-shadow: 0 2px 0 #f9aa33, 0 4px 8px #f9aa33, 0 10px 10px #f9aa33, 0 7px 70px #f9aa33;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-size: 0.75rem; }
+  margin: 0 auto;
+  font-size: 0.75rem;
+  width: 90%; }
   .card a {
     color: #f9aa33; }
     .card a:hover {

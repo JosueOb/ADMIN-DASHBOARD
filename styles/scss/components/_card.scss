@@ -9,13 +9,15 @@
 
 // Small "Full Report" cards element adjustments
 .card{
-    border: solid red 1px;
+    // border: solid red 1px;
     // box-shadow: 
     // box-shadow: 0 0.46875rem 2.1875rem $orange-500, 0 0.9375rem 1.40625rem $orange-500, 0 0.25rem 0.53125rem $orange-500, 0 0.125rem 0.1875rem $orange-500;
     box-shadow: 0 2px 0 $orange-500, 0 4px 8px $orange-500, 0 10px 10px $orange-500, 0 7px 70px $orange-500;
-    margin-top: auto;
-    margin-bottom: auto;
+    // margin-top: auto;
+    // margin-bottom: auto;
+    margin: 0 auto;
     font-size: $card-view-report-font-size;
+    width: 90%;
 
     a {
         color: $card-view-report-link-color;
