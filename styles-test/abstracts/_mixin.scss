@@ -38,13 +38,13 @@
   //   text-align: center;
   // }
   
-  @mixin shadow-lighten($color, $amount: 15%) {
-    box-shadow: 0 2px 6px color_lighten($color, $amount);
-  }
+  // @mixin shadow-lighten($color, $amount: 15%) {
+  //   box-shadow: 0 2px 6px color_lighten($color, $amount);
+  // }
   
-  @mixin button-shadow($color, $amount: 15%) {
-    @include shadow-lighten($color, $amount);
-  }
+  // @mixin button-shadow($color, $amount: 15%) {
+  //   @include shadow-lighten($color, $amount);
+  // }
   
   // @mixin icon-shadow($color, $amount: 15%) {
   //   box-shadow: 0 4px 8px color_lighten($color, $amount);

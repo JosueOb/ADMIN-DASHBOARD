@@ -5,23 +5,6 @@ Estilos para el sistema web
 /*Mixin*/
 /*Sobreescritura de los estilos de bootstrap*/
 /*Override*/
-.btn:focus,
-.btn:active,
-.btn:active:focus,
-.form-control:focus {
-  box-shadow: none !important;
-  outline: none; }
-
-a {
-  color: #4a6572;
-  font-weight: 500;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; }
-
 .form-control
  {
   background-color: #feedd4;
@@ -94,11 +77,24 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #232f34;
     color: #232f34; }
 
-/* nunito-regular - latin */
-/* nunito-600 - latin */
-/* nunito-700 - latin */
-/* nunito-800 - latin */
-body {
+.btn:focus,
+.btn:active,
+.btn:active:focus,
+.form-control:focus {
+  box-shadow: none !important;
+  outline: none; }
+
+a {
+  color: #4a6572;
+  font-weight: 500;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; }
+
+.login {
   background-color: #384b52;
   font-size: 14px;
   font-weight: 400;

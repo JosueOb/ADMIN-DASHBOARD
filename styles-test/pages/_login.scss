@@ -1,0 +1,18 @@
+.login {
+    // background-color: color(body);
+    // background-color: lighten($blue-800, 10%);
+    background-color: lighten($blue-800, 10%);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Nunito', 'Segoe UI', arial;
+    // color: color(font);
+}
+.login-brand {
+    margin: 20px 0;
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #666;
+    text-align: center;
+  }

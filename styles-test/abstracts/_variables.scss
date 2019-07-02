@@ -7,33 +7,33 @@ $blue-600: #4a6572;
 $orange-500: #f9aa33;
 $white: #ffffff;
 
-$colors: (
-  primary:    		#6777ef,
-  secondary:      #cdd3d8,
-  success:        #63ed7a,
-  info:           #3abaf4,
-  warning:        #ffa426,
-  danger:         #fc544b,
-  light:          #e3eaef,
-  grey:  		      #868e96,
-  whitesmoke:     #f7f9f9,
-  dark:       		#191d21,
-  muted:          #98a6ad,
-  body:           #fafdfb,
-  font:           #6c757d,
-  fontdark:       #34395e,
-  white:          #ffffff
-);
+// $colors: (
+//   primary:    		#6777ef,
+//   secondary:      #cdd3d8,
+//   success:        #63ed7a,
+//   info:           #3abaf4,
+//   warning:        #ffa426,
+//   danger:         #fc544b,
+//   light:          #e3eaef,
+//   grey:  		      #868e96,
+//   whitesmoke:     #f7f9f9,
+//   dark:       		#191d21,
+//   muted:          #98a6ad,
+//   body:           #fafdfb,
+//   font:           #6c757d,
+//   fontdark:       #34395e,
+//   white:          #ffffff
+// );
 
 
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px
+// ) !default;
 
 // @function color($key) {
 // 	@return map-get($colors, $key);
