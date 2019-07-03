@@ -124,16 +124,16 @@ Estilos para el sistema web
       padding: 0 5px;
       margin: 0; }
     .main-navbar .navbar .notifications .dropdown-menu .notification__icon {
-      background-color: #e1e5eb;
       box-shadow: 0 0 0.2rem 1px #5A6169;
       width: 2.1875rem;
       height: 2.1875rem;
       line-height: 0;
       display: block;
-      text-align: center;
       margin: auto;
       border-radius: 50%; }
-      .main-navbar .navbar .notifications .dropdown-menu .notification__icon i {
+      .main-navbar .navbar .notifications .dropdown-menu .notification__icon img {
+        border-radius: 50%;
+        width: 100%;
         color: #3D5170;
         line-height: 2.0625rem;
         font-size: 1.0625rem;
