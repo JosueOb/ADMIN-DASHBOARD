@@ -16,7 +16,12 @@ Estilos para el sistema web
 @import 'override/button';
 
 // Layout
+@import 'layout/main-navbar';
+@import 'layout/main-sidebar';
+@import 'layout/page-header';
+@import 'layout/main-content';
 @import 'layout/forms';
+@import 'layout/main-footer';
 
 // Componentes
 
