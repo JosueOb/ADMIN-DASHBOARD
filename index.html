@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/css/main-styles.css">
+    <link rel="stylesheet" href="styles-test/main.css">
     <!--<link rel="stylesheet" href="styles/css/main-styles.css">-->
 
     <title>Admin Dashboard</title>
@@ -46,13 +47,18 @@
 
                 <div class="nav-wrapper">
                     <ul class="nav flex-column">
+                        <li class="menu-header">Administrador</li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link active" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" data-toggle="dropdown">
                                 <!--<i class="material-icons">edit</i>-->
                                 <!--<i class="fas fa-user-tag"></i>-->
                                 <i class="fas fa-id-card-alt"></i>
                                 <span>Roles</span>
                             </a>
+                            <div class="collapse text-center" id="collapseExample">
+                                <a class="nav-link" href="buttons.html">Buttons</a>
+                                <a class="nav-link" href="cards.html">Cards</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">
@@ -103,7 +109,24 @@
                                 <span>Solicitudes</span>
                             </a>
                         </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <i class="fas fa-fw fa-cog"></i>
+                                <span>Components</span>
+                            </a>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                                <div class="bg-white py-2 collapse-inner rounded">
+                                <h6 class="collapse-header">Custom Components:</h6>
+                                <a class="collapse-item" href="buttons.html">Buttons</a>
+                                <a class="collapse-item" href="cards.html">Cards</a>
+                                </div>
+                            </div>
+                        </li>
+
                     </ul>
+
                 </div>
             </aside>
             <!-- /Main Sidebar -->
@@ -360,6 +383,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.js"></script>
     <script src="scripts/dropdown.js"></script>
+    <script src="scripts/dropdown-menu.js"></script>
 
 </body>
 </html>
