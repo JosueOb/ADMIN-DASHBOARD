@@ -8,13 +8,12 @@ Estilos para el sistema web
 .form-control,
 .custom-select,
 .custom-file-label {
-  background-color: #feedd4;
-  border-color: #6d91a6; }
+  background-color: #ffffff;
+  border-color: #d2d8e1; }
   .form-control:focus,
   .custom-select:focus,
   .custom-file-label:focus {
-    background-color: #fffdfb;
-    border-color: #384b52; }
+    border-color: #3D5170; }
 
 .custom-control {
   line-height: 1.6rem; }
@@ -40,7 +39,7 @@ Estilos para el sistema web
 
 .custom-file-input:focus + .custom-file-label {
   box-shadow: none;
-  border-color: red; }
+  border-color: #3D5170; }
   .custom-file-input:focus + .custom-file-label:after {
     border-color: transparent; }
 
