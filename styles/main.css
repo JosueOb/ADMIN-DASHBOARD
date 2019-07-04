@@ -342,7 +342,8 @@ Estilos para el sistema web
       font-weight: 400; } }
 
 .main-content > .main-content-container.container-fluid {
-  min-height: calc(100vh - 7.5rem); }
+  min-height: calc(100vh - 7.5rem);
+  background-color: #F5F6F8; }
 
 .btn:focus,
 .btn:active,
