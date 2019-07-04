@@ -210,34 +210,35 @@ Estilos para el sistema web
   box-shadow: 0 0.125rem 0.6825rem rgba(90, 97, 105, 0.3); }
 
 .main-sidebar {
-  top: 0;
   position: fixed;
   height: calc(100vh);
-  background: #4a6572;
+  background: #ffffff;
   z-index: 1070;
-  will-change: transform;
   transition: transform 200ms ease-in-out;
-  box-shadow: 0 0.125rem 0.375rem rgba(249, 170, 51, 0.1), 0 0.125rem 0.5rem rgba(249, 170, 51, 0.15), 0 0.9375rem 1.375rem rgba(249, 170, 51, 0.1), 0 0.4375rem 2.1875rem rgba(249, 170, 51, 0.1); }
+  box-shadow: 0 0.125rem 9.375rem rgba(90, 97, 105, 0.3); }
   @media (max-width: 767.98px) {
     .main-sidebar {
       transform: translateX(-100%);
       box-shadow: none; } }
   .main-sidebar.open {
     transform: translateX(0);
-    box-shadow: 0 0.125rem 0.375rem rgba(249, 170, 51, 0.1), 0 0.125rem 0.5rem rgba(249, 170, 51, 0.15), 0 0.9375rem 1.375rem rgba(249, 170, 51, 0.1), 0 0.4375rem 2.1875rem rgba(249, 170, 51, 0.1); }
+    box-shadow: 0 0.125rem 9.375rem rgba(90, 97, 105, 0.3); }
   .main-sidebar .toggle-sidebar {
     position: absolute;
     right: 0;
     height: 100%;
-    padding: 1.25rem;
+    padding: 1rem;
     font-size: 1.25rem;
-    border-left: 1px solid #f9aa33; }
+    border-left: #e1e5eb solid 0.05px; }
     .main-sidebar .toggle-sidebar:hover {
       cursor: pointer; }
   .main-sidebar .navbar-brand {
     overflow: hidden;
+    white-space: normal;
+    text-align: center;
     height: 3.75rem;
     font-size: 1.1rem;
+    display: flex;
     background-color: #ffffff;
     color: #232f34; }
     .main-sidebar .navbar-brand .brand-logo {
@@ -246,6 +247,14 @@ Estilos para el sistema web
     overflow-y: auto;
     overflow-x: hidden;
     height: calc(100vh - 3.75rem - 1px); }
+  .main-sidebar .nav .menu-header {
+    color: #ffffff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    padding: 0.5rem;
+    background-color: #818EA3; }
   .main-sidebar .nav .nav-item,
   .main-sidebar .nav .nav-link {
     white-space: nowrap;
@@ -254,36 +263,65 @@ Estilos para el sistema web
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    will-change: background-color, box-shadow, color;
     transition: box-shadow 200ms ease, color 200ms ease, background-color 200ms ease;
     font-size: 0.85rem; }
   .main-sidebar .nav .nav-item .nav-link {
-    border-bottom: 1px solid #344955;
+    border-bottom: #e1e5eb solid 0.05px;
     font-weight: 400;
-    color: #ffffff;
-    padding: 0.9375rem 1.5625rem; }
+    color: #5A6169;
+    padding: 0.9375rem 1.5625rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
     .main-sidebar .nav .nav-item .nav-link i {
       min-width: 1.25rem;
-      font-size: 90%;
-      text-align: center;
-      vertical-align: middle;
-      will-change: color;
-      color: #ffffff;
+      font-size: 1.125rem;
+      color: #5A6169;
       transition: color 200ms ease;
       margin-right: 0.375rem; }
-    .main-sidebar .nav .nav-item .nav-link i {
-      font-size: 1.125rem;
-      top: -1px; }
   .main-sidebar .nav .nav-item.active,
   .main-sidebar .nav .nav-item .nav-link.active, .main-sidebar .nav .nav-item:hover,
   .main-sidebar .nav .nav-item .nav-link:hover {
-    box-shadow: inset 0.1875rem 0 0 #f9aa33;
-    background-color: #232f34;
-    color: #f9aa33; }
+    box-shadow: inset 0.1875rem 0 0 #3D5170;
+    background-color: #e1e5eb;
+    color: #3D5170;
+    border: none; }
     .main-sidebar .nav .nav-item.active i,
     .main-sidebar .nav .nav-item .nav-link.active i, .main-sidebar .nav .nav-item:hover i,
     .main-sidebar .nav .nav-item .nav-link:hover i {
-      color: #f9aa33; }
+      color: #3D5170; }
+  .main-sidebar .nav .nav-item .collapse,
+  .main-sidebar .nav .nav-item .collapsing {
+    border-bottom: #e1e5eb solid 0.05px;
+    background-color: #ffffff; }
+    .main-sidebar .nav .nav-item .collapse .collapse-inner,
+    .main-sidebar .nav .nav-item .collapsing .collapse-inner {
+      font-size: 12px; }
+      .main-sidebar .nav .nav-item .collapse .collapse-inner .collapse-item,
+      .main-sidebar .nav .nav-item .collapsing .collapse-inner .collapse-item {
+        box-shadow: inset 0.1875rem 0 0 #3D5170;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 400;
+        color: #5A6169;
+        padding: 0.9375rem 1.5625rem; }
+        .main-sidebar .nav .nav-item .collapse .collapse-inner .collapse-item i,
+        .main-sidebar .nav .nav-item .collapsing .collapse-inner .collapse-item i {
+          min-width: 1.25rem;
+          font-size: 1.125rem;
+          color: #5A6169;
+          transition: color 200ms ease;
+          margin-right: 0.375rem; }
+        .main-sidebar .nav .nav-item .collapse .collapse-inner .collapse-item:hover,
+        .main-sidebar .nav .nav-item .collapsing .collapse-inner .collapse-item:hover {
+          box-shadow: inset 0.1875rem 0 0 #3D5170;
+          background-color: #c2cad7;
+          color: #3D5170; }
+        .main-sidebar .nav .nav-item .collapse .collapse-inner .collapse-item.active,
+        .main-sidebar .nav .nav-item .collapsing .collapse-inner .collapse-item.active {
+          box-shadow: inset 0.1875rem 0 0 #3D5170;
+          background-color: #c2cad7;
+          color: #3D5170; }
 
 .page-header .page-title {
   font-size: 1.625rem;

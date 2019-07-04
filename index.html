@@ -40,32 +40,40 @@
                         </a>
                         <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
                             <!--<i class="material-icons">&#xE5C4;</i>-->
-                            <i class="fas fa-long-arrow-alt-left"></i>
+                            <i class="fas fa-arrow-left"></i>
                         </a>
                     </nav>
                 </div>
 
                 <div class="nav-wrapper">
-                    <ul class="nav flex-column">
+                    <ul class="nav flex-column accordion" id="accordionSidebar">
                         <li class="menu-header">Administrador</li>
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" data-toggle="dropdown">
-                                <!--<i class="material-icons">edit</i>-->
-                                <!--<i class="fas fa-user-tag"></i>-->
+                            <a class="nav-link active" data-toggle="collapse" data-target="#collapseRol" aria-expanded="true" aria-controls="collapseRol">
                                 <i class="fas fa-id-card-alt"></i>
                                 <span>Roles</span>
                             </a>
-                            <div class="collapse text-center" id="collapseExample">
-                                <a class="nav-link" href="buttons.html">Buttons</a>
-                                <a class="nav-link" href="cards.html">Cards</a>
+                            <div id="collapseRol" class="collapse show" >
+                                <div class="collapse-inner">
+                                    <a class="collapse-item active" href="#"><i class="fas fa-plus-circle"></i>Registrar</a>
+                                    <a class="collapse-item" href="cards.html"><i class="fas fa-list"></i>Listar</a>
+                                    <a class="collapse-item" href="cards.html"><i class="fas fa-edit"></i>Editar</a>
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">
+                            <a class="nav-link " data-toggle="collapse" data-target="#collapseDirectiva" aria-expanded="true" aria-controls="collapseDirectiva">
                                 <!--<i class="material-icons">vertical_split</i>-->
                                 <i class="fas fa-users"></i>
                                 <span>Directiva</span>
                             </a>
+                            <div id="collapseDirectiva" class="collapse" >
+                                    <div class="collapse-inner">
+                                        <a class="collapse-item" href="#"><i class="fas fa-plus-circle"></i>Registrar</a>
+                                        <a class="collapse-item" href="cards.html"><i class="fas fa-list"></i>Listar</a>
+                                        <a class="collapse-item" href="cards.html"><i class="fas fa-edit"></i>Editar</a>
+                                    </div>
+                                </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">
@@ -365,125 +373,107 @@
                     <!--/Page header-->
 
                     <!--Content-->
-
-                    <!-- Default Light Table -->
-                    <div class="row">
-                        <div class="col">
-                            <div class="card mb-4">
-                                <div class="card-header border-bottom">
-                                    <h6 class="m-0">Active Users</h6>
-                                </div>
-                                <div class="card-body p-0 pb-3 text-center">
-                                    <table class="table mb-0">
-                                        <thead class="bg-light">
-                                        <tr>
-                                            <th scope="col" class="border-0">#</th>
-                                            <th scope="col" class="border-0">First Name</th>
-                                            <th scope="col" class="border-0">Last Name</th>
-                                            <th scope="col" class="border-0">Country</th>
-                                            <th scope="col" class="border-0">City</th>
-                                            <th scope="col" class="border-0">Phone</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Ali</td>
-                                            <td>Kerry</td>
-                                            <td>Russian Federation</td>
-                                            <td>Gdańsk</td>
-                                            <td>107-0339</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Clark</td>
-                                            <td>Angela</td>
-                                            <td>Estonia</td>
-                                            <td>Borghetto di Vara</td>
-                                            <td>1-660-850-1647</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Jerry</td>
-                                            <td>Nathan</td>
-                                            <td>Cyprus</td>
-                                            <td>Braunau am Inn</td>
-                                            <td>214-4225</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Colt</td>
-                                            <td>Angela</td>
-                                            <td>Liberia</td>
-                                            <td>Bad Hersfeld</td>
-                                            <td>1-848-473-7416</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Default Light Table -->
-                    <!-- Default Dark Table -->
-                    <div class="row">
-                        <div class="col">
-                        <div class="card card-small overflow-hidden mb-4">
-                            <div class="card-header bg-dark">
-                            <h6 class="m-0 text-white">Inactive Users</h6>
-                            </div>
-                            <div class="card-body p-0 pb-3 bg-dark text-center">
-                            <table class="table table-dark mb-0">
-                                <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col" class="border-bottom-0">#</th>
-                                    <th scope="col" class="border-bottom-0">First Name</th>
-                                    <th scope="col" class="border-bottom-0">Last Name</th>
-                                    <th scope="col" class="border-bottom-0">Country</th>
-                                    <th scope="col" class="border-bottom-0">City</th>
-                                    <th scope="col" class="border-bottom-0">Phone</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Graham</td>
-                                    <td>Brent</td>
-                                    <td>Benin</td>
-                                    <td>Ripabottoni</td>
-                                    <td>1-512-760-9094</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Clark</td>
-                                    <td>Angela</td>
-                                    <td>Estonia</td>
-                                    <td>Borghetto di Vara</td>
-                                    <td>1-660-850-1647</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Wylie</td>
-                                    <td>Joseph</td>
-                                    <td>Korea, North</td>
-                                    <td>Guelph</td>
-                                    <td>325-4351</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Garth</td>
-                                    <td>Clementine</td>
-                                    <td>Indonesia</td>
-                                    <td>Narcao</td>
-                                    <td>722-8264</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <!-- End Default Dark Table -->
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
                 <!--/Content-->
                 </div>
 
