@@ -5,12 +5,14 @@ Estilos para el sistema web
 /*Mixin*/
 /*Sobreescritura de los estilos de bootstrap*/
 /*Override*/
-.form-control
- {
+.form-control,
+.custom-select,
+.custom-file-label {
   background-color: #feedd4;
   border-color: #6d91a6; }
-  .form-control:focus
-   {
+  .form-control:focus,
+  .custom-select:focus,
+  .custom-file-label:focus {
     background-color: #fffdfb;
     border-color: #384b52; }
 
@@ -29,6 +31,18 @@ Estilos para el sistema web
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
 .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #344955 !important; }
+
+.custom-file-label:after {
+  border-color: transparent; }
+.custom-file-label:focus, .custom-file-label:active {
+  box-shadow: none;
+  outline: none; }
+
+.custom-file-input:focus + .custom-file-label {
+  box-shadow: none;
+  border-color: red; }
+  .custom-file-input:focus + .custom-file-label:after {
+    border-color: transparent; }
 
 .card {
   box-shadow: 0 4px 8px rgba(249, 170, 51, 0.5);
@@ -328,13 +342,14 @@ Estilos para el sistema web
   font-weight: 500;
   line-height: 1;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #3D5170; }
   @media (max-width: 767.98px) {
     .page-header .page-title {
       font-size: 2rem; } }
 .page-header .page-subtitle {
   letter-spacing: 0.125rem;
-  color: #f9aa33;
+  color: #232f34;
   font-size: 0.625rem; }
   @media (max-width: 767.98px) {
     .page-header .page-subtitle {

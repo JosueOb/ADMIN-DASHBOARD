@@ -1,10 +1,12 @@
 .page-header {
     .page-title {
+        // border: solid red 1px;
         font-size: $page-title-font-size;
         font-weight: $page-title-font-weight;
         line-height: $page-title-line-height;
         margin: $page-title-margin;
         padding: $page-title-padding;
+        color: $page-title-color;
 
         @media(max-width:767.98px){
             font-size: $page-title-sm-font-size;
