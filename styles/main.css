@@ -68,28 +68,27 @@ Estilos para el sistema web
   .card.card-primary {
     border-top: 2.5px solid #818EA3; }
 
-.btn:focus {
-  box-shadow: none !important;
-  outline: none; }
-.btn:active {
-  box-shadow: none !important;
-  outline: none; }
-  .btn:active:focus {
+.btn {
+  width: 10rem;
+  margin: 0 auto; }
+  .btn:focus {
     box-shadow: none !important;
     outline: none; }
+  .btn:active {
+    box-shadow: none !important;
+    outline: none; }
+    .btn:active:focus {
+      box-shadow: none !important;
+      outline: none; }
 
 .btn-primary, .btn-primary.disabled {
-  box-shadow: 0 2px 6px #232f34;
-  background-color: #4a6572;
-  border-color: #232f34; }
-  .btn-primary:focus, .btn-primary.disabled:focus {
-    background-color: color_darken(primary, 10%) !important; }
-    .btn-primary:focus:active, .btn-primary.disabled:focus:active {
-      background-color: color_darken(primary, 10%) !important; }
+  box-shadow: 0 2px 6px #5A6169;
+  background-color: #818EA3;
+  border-color: #3D5170; }
   .btn-primary:active, .btn-primary:hover, .btn-primary.disabled:active, .btn-primary.disabled:hover {
-    background-color: #f9aa33 !important;
-    border-color: #232f34;
-    color: #232f34; }
+    background-color: #3D5170 !important;
+    border-color: #3D5170;
+    color: #ffffff; }
 
 .dropdown-menu {
   box-shadow: 0 0.5rem 0.625rem rgba(90, 97, 105, 0.4);
@@ -389,7 +388,7 @@ h1, h2, h3, h4, h5, h6 {
       text-align: center; } }
 
 .login {
-  background-color: #384b52;
+  background-color: #F5F6F8;
   font-size: 14px;
   font-weight: 400;
   font-family: 'Nunito', 'Segoe UI', arial; }
