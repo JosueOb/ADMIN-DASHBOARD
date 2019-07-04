@@ -40,6 +40,10 @@
 
 
 .custom-file-label {
+  // border: solid red 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  
   &:after {
     border-color: transparent;
   }

@@ -307,7 +307,7 @@
                                     <span class="d-none d-lg-inline-block">Josué Cando</span>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby='dropdownNotifications'>
-                                    <a href="perfil.html" class="dropdown-item">
+                                    <a href="profile.html" class="dropdown-item">
                                         <div class="option__icon-wrapper">
                                             <div class="option__icon">
                                                 <!-- <i class="material-icons">&#xE6E1;</i> -->
@@ -355,7 +355,7 @@
                     <!--Content-->
                     <div class="profile">
                         <div class="row">
-                            <div class="col-md-12 col-lg-6">
+                            <div class="col-12 col-sm-5 col-md-12 col-lg-5">
                                 <div class="card card-primary">
                                     <div class="card-header">
                                         <h4>Avatar</h4>
@@ -363,18 +363,21 @@
 
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-6 col-lg-12 col-xl-5">
                                                 <img src="images/0.jpg" alt="">
                                             </div>
-                                            <div class="col-12 col-md-6">
+                                            <div class="col-12 col-md-6 col-lg-12 col-xl-7">
+                                            
                                                 <form method="POST">
                                                         
                                                         <div class="form-group">
                                                                 <label for="email">Imagen</label>
                                                                 <div class="custom-file">
                                                                     <input type="file" class="custom-file-input" id="customFile" >
-                                                                    <label class="custom-file-label" for="customFile" data-browse="Cambiar">photo.png</label>
+                                                                    <label class="custom-file-label" for="customFile" data-browse="Cambiar"><span>imgane.png</span></label>
                                                                 </div>
+                                                                
+
                                                         </div>
                 
                                                     <div class="form-group">
@@ -396,7 +399,7 @@
                                     <div class="card-body">
                                         <form method="POST">
                                                 <div class="row">
-                                                        <div class="form-group col-12 col-md-6">
+                                                        <div class="form-group col-12 col-md-6 col-lg-12 col-xl-6">
                                                         <label for="password" class="d-block">Contrasenia</label>
                                                         <input id="password" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="password">
                                                         <div id="pwindicator" class="pwindicator">
@@ -404,7 +407,7 @@
                                                             <div class="label"></div>
                                                         </div>
                                                         </div>
-                                                        <div class="form-group col-12 col-md-6">
+                                                        <div class="form-group col-12  col-md-6 col-lg-12 col-xl-6">
                                                         <label for="password2" class="d-block">Confirme contrasenia</label>
                                                         <input id="password2" type="password" class="form-control" name="password-confirm">
                                                         </div>
@@ -420,7 +423,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-12 col-lg-6">
+                            <div class="col-12 col-sm-7 col-md-12 col-lg-7">
                                 <div class="card card-primary profile">
                                     <div class="card-header">
                                         <h4>Datos</h4>
@@ -433,7 +436,7 @@
                                             <div class="row">
                                                 <div class="form-group col-12 col-md-6">
                                                     <label for="frist_name">Nombre</label>
-                                                    <input id="frist_name" type="text" class="form-control" name="frist_name" autofocus>
+                                                    <input id="frist_name" type="text" class="form-control" name="frist_name">
                                                 </div>
                                                 <div class="form-group col-12 col-md-6">
                                                     <label for="last_name">Apellidos</label>
@@ -453,12 +456,12 @@
                                                     <input type="text" class="form-control">
                                                 </div>
                                                 <div class="form-group col-12 col-md-6">
-                                                    <label>Número telefónico</label>
+                                                    <label>Teléfono</label>
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
                     
-                                            <div class="form-group">
+                                            <div class="form-group ">
                                                 <button type="submit" class="btn btn-primary btn-sm btn-block">
                                                 Guardar
                                                 </button>
@@ -496,6 +499,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.js"></script>
     <script src="scripts/dropdown.js"></script>
+    <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+    
 
 </body>
 </html>
