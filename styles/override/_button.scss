@@ -57,3 +57,16 @@
       color: $white;
     }
   }
+  .btn-secondary{
+    box-shadow: 0 2px 6px $shuttle-gray;
+    background-color: lightblue;
+    border-color: darken(lightblue, 30%);
+    
+    &:active, &:hover {
+      // background-color: $fiord-blue !important;
+      background-color: darken(lightblue, 30%) !important;
+      border-color: darken(lightblue, 30%);
+      color: $white;
+    }
+  }
+  

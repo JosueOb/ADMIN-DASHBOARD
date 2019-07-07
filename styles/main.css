@@ -109,6 +109,15 @@ Estilos para el sistema web
     border-color: #660000;
     color: #ffffff; }
 
+.btn-secondary {
+  box-shadow: 0 2px 6px #5A6169;
+  background-color: lightblue;
+  border-color: #3a9fc0; }
+  .btn-secondary:active, .btn-secondary:hover {
+    background-color: #3a9fc0 !important;
+    border-color: #3a9fc0;
+    color: #ffffff; }
+
 .dropdown-menu {
   box-shadow: 0 0.5rem 0.625rem rgba(90, 97, 105, 0.4);
   border: none;
