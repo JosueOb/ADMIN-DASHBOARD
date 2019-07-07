@@ -1,7 +1,7 @@
 .card {
     @include card_base();
     .card-header, .card-body, .card-footer {
-      background-color: transparent;
+      // background-color: transparent;
       padding: 20px 25px;
     }
     .card-body {

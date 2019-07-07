@@ -1,0 +1,21 @@
+.table {
+    margin-bottom: 0;
+    thead{
+        // border: solid red 1px;
+        // text-align: center;
+        background-color: $reagent-gray;
+        th{
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+    tbody{
+        tr{
+            background-color: $white !important;
+            &:hover{
+                background-color: $mischka !important;
+            }
+        }
+
+    }
+}

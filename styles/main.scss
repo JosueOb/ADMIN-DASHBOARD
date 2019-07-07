@@ -15,6 +15,7 @@ Estilos para el sistema web
 @import 'override/card';
 @import 'override/button';
 @import 'override/dropdown';
+@import 'override/table';
 // @import 'override/accordion';
 
 // Layout
@@ -26,6 +27,7 @@ Estilos para el sistema web
 @import 'layout/main-footer';
 
 // Componentes
+@import 'components/table-custom';
 
 // Paginas
 @import 'pages/login';
